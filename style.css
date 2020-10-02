@@ -54,7 +54,7 @@ header.mainHeader {
   align-items: center;
   font-family: var(--mainFont);
   font-size: 20px;
-  box-shadow: inset 0px -1px 5px var(--secondColor);
+  box-shadow: inset 0px -1px 5px rgb(204, 204, 204);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   background: white;
@@ -149,7 +149,7 @@ header.mainHeader nav ul a:hover::after{
 
 .menu a {
   padding: 5px;
-  color: var(--secondColor);
+  color: #adacac;
   text-decoration: none;
   font-family: var(--mainFont);
   box-shadow: 1px 10px 10px rgb(246, 246, 246);
@@ -158,7 +158,8 @@ header.mainHeader nav ul a:hover::after{
 
 .menu a:hover {
   letter-spacing: 4px;
-  transition: 0.1s linear;
+  color: var(--secondColor);
+  transition: .1s linear;
 }
 
 .menu a::first-letter {
@@ -206,29 +207,34 @@ i.openDropdown {
 section.content {
  position: relative;
   width: 500px;
-  padding: 10px;
+  padding: 15px;
   font-size: 20px;
-  top: 80px;
+  top: 106px;
   text-align: justify;
+  font-family: Lato;
+  line-height: 30px;
   padding: 20px;
-  background: rgb(255, 254, 254);
+  background: #dfdede15;
   z-index: 1;
-  box-shadow: inset 1px 10px 10px rgba(128, 128, 128, 0.178);
+  box-shadow: inset 1px 10px 10px #8080802d;
+  border: 1px solid transparent;
 }
 
-section.content hr {
-  margin-top: 10px;
+section.content:hover {
+  background: #ffffff;
+  border:1px solid #00000049;
+  transition: .1s linear;
 }
 
 section.content h1 {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   width: 70%;
-  background-color: rgb(200, 197, 197);
+  background-color: #c8c5c5;
 }
 
-section.content span {
-  position: absolute;
-  top: 60px;
+section.content span p {
+  margin-bottom:20px;
+  margin-top:-50px;
 }
 
 section.content pre {
@@ -237,7 +243,7 @@ section.content pre {
 }
 
 footer {
-  margin-top: 100px;
+  margin-top: 150px;
   text-align: center;
   font-size: 20px;
   text-decoration: underline;
@@ -264,7 +270,7 @@ footer i {
   header.mainHeader {
     width: 100vw;
     height: 70px;
-    margin: right;
+    margin: auto;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -293,7 +299,7 @@ footer i {
   }
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 800px) {
   .interface {
     width: 100%;
     margin: auto;
@@ -301,13 +307,13 @@ footer i {
 
   .menu {
     display: flex;
-    left: 0;
+    /* left: 0; */
   }
   .menuConfig {
     display: none;
   }
   section.content {
-    width: 700px;
+    width: 50%;
     position: relative;
     max-width: 1200px;
     margin: auto;
